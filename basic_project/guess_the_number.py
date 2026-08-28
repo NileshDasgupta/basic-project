@@ -19,4 +19,7 @@ while True:
             break
         
     except ValueError:
-        print("please enter a proper number")
+        print("please enter a proper number ")
+
+
+    
