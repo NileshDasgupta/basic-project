@@ -120,7 +120,24 @@ questions = [
     }
 ]
 
-
+prices = [
+    100,
+    200,
+    300,
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    20000,
+    40000,
+    80000,
+    160000,
+    320000,
+    640000,
+    1000000
+]
+i = 0
 for q in questions:
     print(q["question"])
     for option in q["options"]:
@@ -130,12 +147,16 @@ for q in questions:
 
     if user_answer == q["answer"]:
         print("you've choosed the correct option")
+        
+        print("congo u have won -", prices[i])
+        i += 1
+
     else:
-        # print("you've guessed wrong ans , the correct option would be :", q["answer"])
-        # print(q["solution"])
-        # print("Wrong!")
-        print("Correct answer:", q["answer"])
+        print("you've guessed wrong ans , the correct option would be :", q["answer"])
         print(q["solution"])
+        print("Wrong!")
         break
+    
+   
 
 
